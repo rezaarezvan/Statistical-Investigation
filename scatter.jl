@@ -10,6 +10,7 @@ x = [2018.0, 2019.09, 2019.71, 2020.12, 2020.44, 2021.77]
 df = DataFrame(x = [2018.0, 2019.09, 2019.71, 2020.12, 2020.44, 2021.77])
 y  = [0.0936, 1.5, 8.3, 17, 175, 530]
 
+# Log_10(y)
 df.y  = map(log10, y)
 model = lm(@formula(y ~ x), df)  # Note how the formula looks exactly like the model you want to build
 line  = predict(model, df)
