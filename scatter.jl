@@ -5,6 +5,7 @@ using DataFrames
 using PlotThemes
 using Statistics
 
+# Dark theme because it's nice :)
 theme(:dark)
 x = [2018.0, 2019.09, 2019.71, 2020.12, 2020.44, 2021.77]
 df = DataFrame(x = [2018.0, 2019.09, 2019.71, 2020.12, 2020.44, 2021.77])
